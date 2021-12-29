@@ -1,37 +1,190 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html lang="en-us">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <title>
+    
+      About &middot; Shobhita Sundaram
+    
+  </title>
 
-    {{ post.content }}
+  <link rel="stylesheet" href="css/poole.css">
+  <link rel="stylesheet" href="css/syntax.css">
+  <link rel="stylesheet" href="css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+</head>
+
+  <body class="theme-base-08">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="images/headshot2.jpeg"><img style="width:85%;max-width:100%;display:block;margin-left:auto;margin-right:auto" alt="profile photo" src="images/headshot2.jpeg" class="hoverZoomLink"></a>
+      <h1>
+        <a href="" style="text-align: center">
+          Shobhita Sundaram
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="#about">Home</a>
+      <a class="sidebar-nav-item" href="#research">Research</a>
+      <a class="sidebar-nav-item" href="#projects">Projects</a>
+      <a class="sidebar-nav-item" href="#writing">Writing</a>
+
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+
+    <div class="content container">
+      <div class="page">
+  <h1 id="about">About Me</h1>
+    <p>
+      Hi! I'm a senior at MIT studying Computer Science and Mathematics. I am primarily interested in computer vision, particularly representation learning, learning from synthetic data, and perception. I've also worked in using insights from neuroscience and cognitive science to build better artificial intelligence systems.
+    </p>
+    <p>
+      I work at the MIT Center for Brains, Minds, and Machines with Pawan Sinha and Xavier Boix. In the past I've been fortunate to work at D. E. Shaw (quantitative research), Apple (machine learning), and Two Sigma (software engineering). In my free time I enjoy hiking, writing, and running.
+    </p>
+
+<h1 id="research">Research</h1>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/symmetry_icons.jpg" alt="blind-date" width="160" height="160">
+            </td>
+            <td class="paper_content">
+              <a href="https://export.arxiv.org/abs/2112.04162">
+                <papertitle>Symmetry perception by deep networks: Inadequacy of feed-forward architectures and improvements with recurrent connections</papertitle>
+              </a>
+              <br>
+              <strong>Shobhita Sundaram*</strong>, Darius Sinha*, Matthew Groth, Tomotake Sasaki, Xavier Boix
+              <br>
+              <em>Under Review</em>
+              <p>Preprint on <a href="https://arxiv.org/abs/2112.04162">arXiv</a></p>
+              <p><a href="https://drive.google.com/file/d/1Wm-BePPyZajw9of_9IRZW6c8u4eD7w_B/view?usp=sharing">Poster presentation</a> at the ICLR 2021 Generalization Beyond the Training Distribution in Brains and Machines Workshop</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/ganImage.png" alt="clean-usnob" width="160" height="160">
+            </td>
+            <td class="paper_content">
+              <a href="http://128.84.4.18/abs/2107.02970">
+                <papertitle>GAN-based Data Augmentation for Chest X-ray Classification</papertitle>
+              </a>
+              <br>
+              <strong>Shobhita Sundaram*</strong>, Neha Hulkund*
+              <br>
+              KDD 2021 Applied Data Science for Healthcare Workshop
+              <p>Paper on <a href="https://arxiv.org/abs/2107.02970">arXiv</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/insidenessIcon.png" alt="clean-usnob" width="160" height="160">
+            </td>
+            <td class="paper_content">
+              <a href="https://drive.google.com/file/d/1A-F7V4bevlH6rWVyKgJ6A44WlInflD3M/view">
+                <papertitle>Do Neural Networks for Segmentation Understand Insideness?</papertitle>
+              </a>
+              <br>
+              Kimberly Villalobos*, Vilim Stih*, Amineh Ahmadinejad*, <strong>Shobhita Sundaram</strong>, Jamell Dozier, Andrew Francl, Frederico Azevedo, Tomotake Sasaki, Xavier Boix
+              <br>
+              <em>Neural Computation</em> 33, 2511-2549, 2021
+              <p>Paper available <a href="https://drive.google.com/file/d/1A-F7V4bevlH6rWVyKgJ6A44WlInflD3M/view">here</a></p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+<h1 id="projects">Projects</h1>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/hurtfulwords2.png" alt="blind-date" width="360" height="110">
+            </td>
+            <td class="paper_content">
+              <a href="https://drive.google.com/file/d/1AZWqA6spcYXAbmaeBdW2IQnqRHlpppUG/view?usp=sharing">
+                <papertitle>Facilitating Fairness in Transfer Learning through Distributionally Robust Finetuning</papertitle>
+              </a>
+              <p><em>Final project for 6.864: Natural Language Processing</em></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/moralmachine2.png" alt="clean-usnob" width="160" height="160">
+            </td>
+            <td class="paper_content">
+              <a href="https://drive.google.com/file/d/1lfncR9dRMWer0L5ZgYMEUlA8vCG836TJ/view?usp=sharing">
+                <papertitle>Extension of a Bayesian Hierarchical Model for Moral Judgments</papertitle>
+              </a>
+              <p><em>Final project for 6.804: Computational Cognitive Science</em></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="paper_icon">
+              <img src="images/gendernovels.png" alt="clean-usnob" width="160" height="160">
+            </td>
+            <td class="paper_content">
+              <a href="http://gendernovels.digitalhumanitiesmit.org">
+                <papertitle>Computational Reading of Gender in Novels (1770-1922)</papertitle>
+              </a>
+              <p><em>Research conducted in the MIT Digital Humanities Lab, Fall 2018</em></p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+<h1 id="writing">Writing</h1>
+<table style="text-align: center; width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="paper_icon" style="width:30%">
+              <a href="https://sciencepolicyreview.org/2021/08/catalyzing-quantum-leap/"><img src="images/mitspr2.png" alt="blind-date" width="180" height="180" style="margin-right:auto;margin-left:auto;"></a>
+              MIT Science Policy Review, <em>Associate Editor</em>
+            </td>
+
+            <td class="paper_icon" style="width:30%">
+              <a href="https://issuu.com/mitchroma/docs/fall2019"><img src="images/chroma.png" alt="clean-usnob" width="190" height="180" style="margin-right:auto;margin-left:auto;"></a>
+              MIT Chroma: "Rebuilding Despite the Risks"
+            </td>
+
+            <td class="paper_icon" style="width:33%">
+              <a href="https://riverofreads.wordpress.com"><img src="images/blog.png" alt="clean-usnob" width="180" height="180" style="margin-right:auto;margin-left:auto;"></a>
+              Book reviews & recommendations
+            </td>
+
+          </tr>
+
+        </tbody></table>
+
+
+
 </div>
+
+    </div>
+
+  </body>
+</html>
