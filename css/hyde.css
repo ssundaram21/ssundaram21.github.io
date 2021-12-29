@@ -257,6 +257,17 @@ a.sidebar-nav-item:focus {
 }
 
 .paper_content {
-   width: 100%;
+   width: 72%;
   valign: middle;
+}
+
+.one{
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.one{
+  width: 180px;
+  height: 180px;
+  position: relative;
 }
