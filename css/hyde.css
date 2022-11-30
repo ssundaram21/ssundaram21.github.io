@@ -259,6 +259,7 @@ a.sidebar-nav-item:focus {
 .paper_content {
    width: 72%;
   valign: middle;
+  font-size: 1.0rem;
 }
 
 .one{
