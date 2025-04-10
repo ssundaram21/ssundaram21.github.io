@@ -125,11 +125,14 @@ a.sidebar-nav-item:focus {
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
+  /* max-width: 100%; Allow the content to take up the full width */
+  /* margin: 0 auto; Center the content */
+  /* padding: 2rem; Add some padding for readability */
 }
 
 @media (min-width: 48em) {
   .content {
-    max-width: 44rem;
+    max-width: 64rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -180,7 +183,7 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #fffff;
+  background-color: #000000;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
@@ -251,15 +254,37 @@ a.sidebar-nav-item:focus {
 }
 
 .paper_icon {
-  padding: 20px;
-  width: 28%;
+  padding-top: 20px;
+  padding-left: 3rem;
+  /* width: 28%; */
   vertical-align: middle;
+
 }
 
 .paper_content {
-  width: 72%;
-  valign: middle;
+  /* width: 72%; */
+  /* valign: middle; */
   font-size: 1.0rem;
+  padding-left: 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 2px 5px; 
+  font-size: 0.75rem; 
+  background-color: #fff; 
+  /* color: white !important;  */
+  text-decoration: none; 
+  border: 1.5px solid #d63e76; 
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  margin-right: 0.25rem;
+}
+
+.button-link:hover {
+  background-color: #d63e76; /* Slightly darker pink on hover */
+  color: #fff !important; /* Ensure text remains white on hover */
+  text-decoration: none; 
 }
 
 .one{
@@ -278,3 +303,11 @@ a.sidebar-nav-item:focus {
   position: relative;
 }
 
+#publications-table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-left: 0;
+  margin-right: 0;
+}
