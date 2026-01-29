@@ -258,7 +258,19 @@ a.sidebar-nav-item:focus {
   padding-left: 3rem;
   /* width: 28%; */
   vertical-align: middle;
+  text-align: center;
+}
 
+.paper_icon > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.paper_icon img {
+  margin: 0 auto;
+  display: block;
 }
 
 .paper_content {
